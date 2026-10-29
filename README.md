@@ -13,3 +13,8 @@ No volver a descargarlo: el dataset se actualiza y cambiarían los resultados.
 2. Activar el entorno (Windows: .venv\Scripts\activate)
 3. pip install -r requirements.txt
 4. Ejecutar los notebooks de notebooks/ en orden
+
+## Prototipo de API (vinculación con UrbanRec)
+Desde la raíz del repositorio, con el entorno activado:
+uvicorn api.main:app --reload
+Abrir http://127.0.0.1:8000/docs y probar POST /prediccion/alta-demanda.
